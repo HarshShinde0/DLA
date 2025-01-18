@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-docker-container:
-    runs-on: self-hosted  # Ensure your runner is self-hosted with GPU support
+    runs-on: ubuntu-latest  # Use GitHub-hosted runner
 
     steps:
       # Step 1: Check out the repository
@@ -19,12 +19,11 @@ jobs:
         run: |
           docker pull harshshinde/deep-learning-aio:gpu
 
-      # Step 3: Run the Docker container with GPU
+      # Step 3: Run the Docker container without GPU
       - name: Run Docker Container
         run: |
           docker run -d \
             -p 8888:8888 \
-            --gpus all \
             --restart unless-stopped \
             harshshinde/deep-learning-aio:gpu
 
