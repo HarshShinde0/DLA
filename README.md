@@ -1,4 +1,5 @@
 # Deep Learning AIO - DLA (GPU Enabled)
+[![Deep Learning AIO - DLA](https://github.com/HarshShinde0/DLA/actions/workflows/docker-run.yml/badge.svg)](https://github.com/HarshShinde0/DLA/actions/workflows/docker-run.yml)
 
 This Docker image (`harshshinde/deep-learning-aio:gpu`) provides a fully equipped environment for deep learning and AI model development with GPU support. It comes preconfigured with a wide range of popular machine learning frameworks, including TensorFlow, PyTorch, Keras, MXNet, and many others, ensuring you can seamlessly build, train, and deploy AI models on a GPU-enabled system.
 
